@@ -6,7 +6,7 @@ Scenario: Show patient visits during working days and holidays
   and hospital staff attendance system works properly
   and visitor card is issued for all patients relatives for a day
   
-  When we calculate the value obtained from taking differnce
+  When we calculate the value obtained from taking difference
   between the values of hospital staff
   and number of visitor card issues by card issuer
   and "Visit-counter"
