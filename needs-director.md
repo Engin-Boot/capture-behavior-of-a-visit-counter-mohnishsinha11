@@ -3,11 +3,13 @@
 Scenario: Show patient visits during working days and holidays
 
   Given "Visit-counter" for a day
-  and number of hospital staff is known
+  and hospital staff attendance system works properly
   and visitor card is issued for all patients relatives for a day
   
-  When hospital staff and number of visitor card issued is subtracted
-  from "Visit-counter"
+  When we calculate the value obtained from taking differnce
+  between the values of hospital staff
+  and number of visitor card issues by card issuer
+  and "Visit-counter"
   Then the result will be number of patients visiting hospital in a day
 
 Scenario: Compute parking slots to reserve for visiting specialists
