@@ -10,4 +10,4 @@ Scenario: Alert when seating capacity is full
 
   Given the Visit-counter
   When the visitor count is more than "90" percent of seating capacity
-  Then inform visitors other than patients to wait outside the hospital 
+  Then inform visitors other than patients to wait outside the hospital
